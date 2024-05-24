@@ -16,5 +16,6 @@ if newChannel then
     newChannel:SendAsync('Message')
 end
 
+
 game:GetService('TextChatService').ChatInputBarConfiguration.TargetTextChannel = oldChannel
 ```
