@@ -44,8 +44,8 @@ game:GetService('ReplicatedStorage').DefaultChatSystemChatEvents.SayMessageReque
 ```lua
 game:GetService('StarterGui'):SetCore('ChatMakeSystemMessage', {
     Text = 'Message',
-    Color = Color3,
-    FontSize = FontSize or Number,
-    Font = Enum.Font
+    Color = Color3.fromRGB(255, 255, 255),
+    FontSize = 18,
+    Font = Enum.Font.Arial
 })
 ```
