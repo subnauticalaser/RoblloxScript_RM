@@ -27,13 +27,6 @@ game:GetService('TextChatService').TextChannels.RBXGeneral:SendSystemMessage('Me
 ```
 
 
-### When Message Received
-```lua
-game:GetService('TextChatService').MessageReceived:Connect(function(TextChatMessage)
-    -- Function Here
-end)
-```
-
 
 
 
@@ -63,6 +56,16 @@ game:GetService('StarterGui'):SetCore('ChatMakeSystemMessage', {
 ### When a Message in Chat is Filltered
 ```lua
 game:GetService('ReplicatedStorage').DefaultChatSystemChatEvents.OnMessageDoneFiltering.OnClientEvent:Connect(function(Speaker, Channel)
+    -- Function Here
+end)
+```
+
+
+## Global
+
+### When Message Received
+```lua
+game:GetService('TextChatService').MessageReceived:Connect(function(TextChatMessage)
     -- Function Here
 end)
 ```
