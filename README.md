@@ -19,3 +19,9 @@ end
 
 game:GetService('TextChatService').ChatInputBarConfiguration.TargetTextChannel = oldChannel
 ```
+
+
+### Send a Raw Message
+```lua
+game:GetService('TextChatService').TextChannels.RBXGeneral:SendSystemMessage('Message')
+```
